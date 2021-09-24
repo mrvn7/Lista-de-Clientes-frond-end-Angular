@@ -1,42 +1,32 @@
 <div class="card-container">
     <mat-form-field appearance="outline">
-      <mat-label>Procurar</mat-label>
-      <input matInput placeholder="Ex: Marcus Vinicius" (keyup)="filter($event)" #input>
+      <mat-label>Digite a placa</mat-label>
+      <input matInput placeholder="Ex: AAA1234" (keyup)="filter($event)" #input>
     </mat-form-field>
     
     <div class="mat-elevation-z8">
       <table mat-table #table [dataSource]="dataSource" matSort style="width: 100%;">
     
         <ng-container matColumnDef="id">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Codigo Cotação </th>
           <td mat-cell *matCellDef="let row"> {{row.id}} </td>
         </ng-container>
     
         <ng-container matColumnDef="nome">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header> Nome </th>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Data Cotação </th>
           <td mat-cell *matCellDef="let row"> {{row.nome}} </td>
         </ng-container>
     
         <ng-container matColumnDef="sobrenome">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header> Sobrenome </th>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Nome Segurado </th>
           <td mat-cell *matCellDef="let row"> {{row.sobrenome}} </td>
         </ng-container>
     
         <ng-container matColumnDef="email">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header> E-mail </th>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> CPF Segurado </th>
           <td mat-cell *matCellDef="let row"> {{row.email}} </td>
         </ng-container>
 
-        <ng-container matColumnDef="datanascimento">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header> Data de nascimento </th>
-          <td mat-cell *matCellDef="let row"> {{row.dataNascimento | date: 'dd/MM/yyyy'}} </td>
-        </ng-container>
-
-        <ng-container matColumnDef="escolaridade">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header> Escolaridade </th>
-          <td mat-cell *matCellDef="let row"> {{row.escolaridade}} </td>
-        </ng-container>
-        
         <ng-container matColumnDef="acoes">
           <th mat-header-cell *matHeaderCellDef mat-sort-header style="justify-content: center; text-align: center; " > Ações </th>
           <td mat-cell *matCellDef="let row"> 
@@ -44,9 +34,6 @@
               <mat-icon>edit</mat-icon>
             </button>
             &nbsp;
-            <button mat-mini-fab color="primary" (click) = 'deleteUser(row.id)' aria-label="Example icon button with a menu icon">
-              <mat-icon>delete</mat-icon>
-            </button>
           </td>
         </ng-container>
 

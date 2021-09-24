@@ -8,9 +8,9 @@ import { RegisterClientComponent } from './register-client/register-client.compo
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: ListClientComponent},
-  {path: 'register', component: RegisterClientComponent},
-  {path: 'edit/:id', component: AlterClientComponent},
-  {path: 'edit', component: AlterClientComponent}
+  // {path: 'register', component: RegisterClientComponent},
+  // {path: 'edit/:id', component: AlterClientComponent},
+  // {path: 'edit', component: AlterClientComponent}
 
 ];
 

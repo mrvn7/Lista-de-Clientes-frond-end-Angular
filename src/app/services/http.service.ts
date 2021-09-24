@@ -1,15 +1,3 @@
-/**
-    * @description      : 
-    * @author           : danil
-    * @group            : 
-    * @created          : 13/08/2021 - 17:35:21
-    * 
-    * MODIFICATION LOG
-    * - Version         : 1.0.0
-    * - Date            : 13/08/2021
-    * - Author          : danil
-    * - Modification    : 
-**/
 import { HttpHeaders } from '@angular/common/http'
 import { Injectable } from '@angular/core'
 

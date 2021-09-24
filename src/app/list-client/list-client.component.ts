@@ -19,7 +19,7 @@ export class ListClientComponent implements OnInit, AfterViewInit {
 
   panelOpenState = false;
   users: any = []
-  displayedColumns = ['id', 'nome', 'sobrenome', 'email', 'datanascimento', 'escolaridade', 'acoes'];
+  displayedColumns = ['id', 'nome', 'sobrenome', 'email', 'acoes'];
   dataSource: MatTableDataSource<any> = new MatTableDataSource();
   background: ThemePalette = 'primary'
  
